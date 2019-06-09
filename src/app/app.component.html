@@ -1,0 +1,27 @@
+
+    <div class="ui-g">
+        <p-panel header="Hours by project (pie)" class="ui-g-12 ui-mg-6">
+            <p-chart type="pie" [data]="hoursByProjectChartData"></p-chart>
+        </p-panel>
+        <p-panel header="Hours by project (doughnut)" class="ui-g-12 ui-mg-6">
+                <p-chart type="doughnut" [data]="hoursByProjectChartData"></p-chart>
+        </p-panel>
+        <p-panel header="Hours by project (polarArea)" class="ui-g-12 ui-mg-6">
+                <p-chart type="polarArea" [data]="hoursByProjectChartData"></p-chart>
+        </p-panel>
+        <p-panel header="Hours by team (bar)" class="ui-g-12 ui-mg-6">
+                <p-chart type="bar" [data]="hoursByTeamChartData"></p-chart>
+        </p-panel>
+        <p-panel header="Hours by team (line, fill:true)" class="ui-g-12 ui-mg-6">
+                <p-chart type="line" [data]="hoursByTeamChartData"></p-chart>
+        </p-panel>
+        <p-panel header="Hours by team (line, fill:false)" class="ui-g-12 ui-mg-6">
+                <p-chart type="line" [data]="hoursByTeamChartDataNoFill"></p-chart>
+        </p-panel>
+        <p-panel header="Hours by team (radar)" class="ui-g-12 ui-mg-6">
+                <p-chart type="radar" [data]="hoursByTeamChartData"></p-chart>
+        </p-panel>
+    </div>
+
+
+<router-outlet></router-outlet>
